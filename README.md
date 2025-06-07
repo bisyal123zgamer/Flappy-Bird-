@@ -33,7 +33,7 @@
             width: 100%;
             height: 100%;
             background-image: url('https://iili.io/2mORBt9.png');
-            background-size: cover;
+            background-size: contain;
             background-repeat: repeat-x;
             background-position: 0 0;
             animation: backgroundScroll 20s linear infinite;
