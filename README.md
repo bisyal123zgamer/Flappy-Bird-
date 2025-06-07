@@ -1,5 +1,3 @@
-# Flappy-Bird-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -464,68 +462,5 @@
         // Initialize the game when the page loads
         window.onload = initGame;
     </script>
-</body>
-</html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Game</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    #gameContainer {
-      width: 100%;
-      height: 100%;
-      background: #000;
-    }
-
-    #fullscreenBtn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      z-index: 10;
-      padding: 10px 15px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <div id="gameContainer">
-    <!-- Your game content here, e.g., <canvas>, WebGL, etc. -->
-    <canvas id="gameCanvas" width="800" height="600"></canvas>
-  </div>
-
-  <button id="fullscreenBtn">Go Fullscreen</button>
-
-  <script>
-    const fullscreenBtn = document.getElementById('fullscreenBtn');
-    const gameContainer = document.getElementById('gameContainer');
-
-    fullscreenBtn.addEventListener('click', () => {
-      if (gameContainer.requestFullscreen) {
-        gameContainer.requestFullscreen();
-      } else if (gameContainer.webkitRequestFullscreen) { // Safari
-        gameContainer.webkitRequestFullscreen();
-      } else if (gameContainer.msRequestFullscreen) { // IE11
-        gameContainer.msRequestFullscreen();
-      }
-    });
-
-    // Optional: Resize canvas to fill screen
-    function resizeCanvas() {
-      const canvas = document.getElementById('gameCanvas');
-      canvas.width = Android.innerWidth;
-      canvas.height = Android.innerHeight;
-    }
-
-    Android.addEventListener('resize', resizeCanvas);
-    resizeCanvas(); // Initial call
-  </script>
 </body>
 </html>
