@@ -520,11 +520,11 @@
     // Optional: Resize canvas to fill screen
     function resizeCanvas() {
       const canvas = document.getElementById('gameCanvas');
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.width = Android.innerWidth;
+      canvas.height = Android.innerHeight;
     }
 
-    window.addEventListener('resize', resizeCanvas);
+    Android.addEventListener('resize', resizeCanvas);
     resizeCanvas(); // Initial call
   </script>
 </body>
